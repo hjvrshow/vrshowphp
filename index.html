@@ -1,0 +1,95 @@
+
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<link rel="icon" href="../static/favicon.ico" />
+
+	<style>
+		@-ms-viewport { width:device-width; }
+		@media only screen and (min-device-width:800px) { html { overflow:hidden; } }
+		html { height:100%; }
+		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+		.hiddentxt {display:none;}
+		/* Center the loader */
+		#loader {
+  		position: absolute;
+  		left: 50%;
+  		top: 50%;
+  		z-index: 1;
+  		width: 150px;
+  		height: 150px;
+  		margin: -75px 0 0 -75px;
+  		border: 16px solid #f3f3f3;
+  		border-radius: 50%;
+  		border-top: 16px solid #3498db;
+  		width: 120px;
+  		height: 120px;
+  		-webkit-animation: spin 2s linear infinite;
+  		animation: spin 2s linear infinite;
+		}
+
+		@-webkit-keyframes spin {
+  		0% { -webkit-transform: rotate(0deg); }
+  		100% { -webkit-transform: rotate(360deg); }
+		}
+
+		@keyframes spin {
+  		0% { transform: rotate(0deg); }
+  		100% { transform: rotate(360deg); }
+		}
+
+		/* Add animation to "page content" */
+		.animate-bottom {
+  		position: relative;
+  		-webkit-animation-name: animatebottom;
+  		-webkit-animation-duration: 1s;
+  		animation-name: animatebottom;
+  		animation-duration: 1s
+		}
+
+		@-webkit-keyframes animatebottom {
+  		from { bottom:-100px; opacity:0 }
+  		to { bottom:0px; opacity:1 }
+		}
+
+		@keyframes animatebottom {
+  		from{ bottom:-100px; opacity:0 }
+  		to{ bottom:0; opacity:1 }
+		}
+
+
+	</style>
+	<script src="./tour.js"></script>
+</head>
+<body>
+
+<div id="loader"></div>
+
+
+<div id="pano" style="width:100%;height:100%;">
+	<script>
+  window.onload=function(){
+		var url_string = location.href; //window.location.href
+		var url = new URL(url_string);
+		var panoid = url.searchParams.get("id");
+		var xmlurl='getdata.php?id='+panoid;
+		embedpano({swf:"tour.swf", xml:xmlurl, target:"pano", html5:"always", mobilescale:1.0, passQueryParameters:true});
+		document.getElementById("loader").style.display = "none";
+  }
+  </script>
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>
