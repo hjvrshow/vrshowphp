@@ -46,8 +46,8 @@ echo $html;
 ## 在线演示
 
 * [http://720ybf.com/partner/vrshow/index.html?id=1248a9e8f8994a9b](http://720ybf.com/partner/vrshow/index.html?id=1248a9e8f8994a9b)
-* [http://720ybf.com/partner/720wx/index.html?id=7e1d1999913da196](http://720ybf.com/partner/720wx/index.html?id=7e1d1999913da196)
-* [http://720ybf.com/partner/720wx/index.html?id=c2ec65dd93d604a5](http://720ybf.com/partner/720wx/index.html?id=c2ec65dd93d604a5)
+* [http://720ybf.com/partner/720wx/index.html?id=7e1d1999913da196](http://720ybf.com/partner/vrshow/index.html?id=7e1d1999913da196)
+* [http://720ybf.com/partner/720wx/index.html?id=c2ec65dd93d604a5](http://720ybf.com/partner/vrshow/index.html?id=c2ec65dd93d604a5)
 
 
 
