@@ -4,19 +4,20 @@
 
 ## 目录
 
-* [getdata.php](服务器端文件)
-* [其他](客户端文件)
-  * [index.html]
-  * [tour.js]
-  * [tour.swf]
-  * [plugins]
-  * [skin]
-  * [sound]
-  * [assets]
+* 服务器端文件
+  * getdata.php
+* 客户端文件
+  * index.html
+  * tour.js
+  * tour.swf
+  * plugins/
+  * skin/
+  * sound/
+  * assets/
 
 ## 实现原理
 
-服务器端文件 getdata.php 根据全景id从幻镜VR联盟服务器(http://720ybf.com)上获取配置信息，在客户端展示。
+服务器端文件 getdata.php 根据全景id从幻镜VR联盟服务器上获取配置信息，在客户端展示VR全景。
 
 
 ```xml
@@ -34,12 +35,12 @@ echo $html;
 
 本文件夹在PHP幻镜下可直接运行，只需传入全景id即可。案例：
 
-http://服务器地址/vrshow/index.html?id=c2ec65dd93d604a5
-http://服务器地址/vrshow/index.html?id=7e1d1999913da196
-http://服务器地址/vrshow/index.html?id=1248a9e8f8994a9b
-http://服务器地址/vrshow/index.html?id=3ae87581791df709
-http://服务器地址/vrshow/index.html?id=3e7ee6462929a592
-http://服务器地址/vrshow/index.html?id=68e4437414ae2e83
+  - http://服务器地址/vrshow/index.html?id=c2ec65dd93d604a5
+  - http://服务器地址/vrshow/index.html?id=7e1d1999913da196
+  - http://服务器地址/vrshow/index.html?id=1248a9e8f8994a9b
+  - http://服务器地址/vrshow/index.html?id=3ae87581791df709
+  - http://服务器地址/vrshow/index.html?id=3e7ee6462929a592
+  - http://服务器地址/vrshow/index.html?id=68e4437414ae2e83
 
 
 ## 在线演示
@@ -62,7 +63,7 @@ http://服务器地址/vrshow/index.html?id=68e4437414ae2e83
 
 ## 关于我们
 
-杭州幻镜科技有限公司
-地址：杭州市滨江区聚光科技产业园C座3W空间
-电话：18958021010
-网址：www.720ybf.com
+  - 杭州幻镜科技有限公司
+  - 地址：杭州市滨江区聚光科技产业园C座3W空间
+  - 电话：18958021010
+  - 网址：www.720ybf.com
